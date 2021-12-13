@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 30%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+}
+ .navlist{
+    /* background-color: black; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+ }
+.navlist li{
+list-style: none;
+padding: 26px 30px
+}
+.navlist li a{
+text-decoration: none;
+color: white;
+font-size: 19px;
+font-family:'Ubuntu', sans-serif;
+}
+.navlist li a:hover{
+    color: grey;
+    }
+.rightnav{
+    /* background-color: teal; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url(https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-blend-mode: darken;
+
+}      
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     max-width: 50%;
+    margin: auto;
+    padding: 120px;
+}
+.firstsection{
+    height: 100vh;
+}
+.firsthalf{
+width: 80%;
+display: flex;
+justify-content: center;
+flex-direction:column;
+}
+.secondhalf{
+    width: 70%;
+    padding: 0px 20px;
+
+}
+.secondhalf img{
+    border: 4px solid white;
+    display: block;
+    margin: auto;
+    width: 175px;
+}
+.text-big{
+font-size: 35px;
+line-height: 35px;
+}
+.text-small{
+font-size: 15px;
+padding: 12px 0px;
+}
+.btn{
+    padding: 8px 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin: 0px 4px 0px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn-sm{
+    padding: 3px 12px;
+    vertical-align: middle;
+    margin: 0px -6px 0px 9px;
+}
+.section{
+    display: flex;
+    padding-top: 32px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    width: 230px;
+}
+.paras{
+    padding: 0px 30px;
+}
+.sectionSubTag{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact{
+    background-color: #e3e3e3;
+    height: 833px;
+}
+.text-center{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 14px 0px;
+    padding: 5px 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+    font-size: 16px;
+}
+.text-footer{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    padding: 25px 0px;
+    color: white;
+}
+.burger{
+display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1061px){
+.navlist{
+    flex-direction: column;
+}
+.navbar{
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+    height: 419px;
+}
+.rightnav{
+    text-align: center;
+}
+.box-main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 35px;
+}
+#search{
+    width: 100%;
+}
+.burger{
+    display: block;
+}
+.h-nav-resp{
+    height: 50px;
+}
+.v-class-resp{
+    opacity: 0;
+}
+.section{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.text-big{
+    text-align: center;
+}
+.text-small{
+    text-align: center;
+}
+.buttons{
+    text-align: center;
+}
+.paras{
+    padding: 0px;
+    margin-top: -90px;
+}
+.thumbnail img{
+    margin-bottom: 113px;
+} 
+.firstsection{
+    height: 140vh;
+}
+}
